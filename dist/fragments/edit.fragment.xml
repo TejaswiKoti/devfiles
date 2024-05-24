@@ -1,0 +1,62 @@
+<core:FragmentDefinition xmlns="sap.m" displayBlock="true" xmlns:u="sap.ui.unified" xmlns:core="sap.ui.core">
+	<Dialog id="idEditFrag" class="sapUiContentPadding" title="Edit">
+    
+		<content>
+       <Table id="idEditTable" items="{path:'/items'}">
+        <columns>
+        <Column >
+        <Text text="LOCATION_ID"></Text>
+        </Column>
+        <Column >
+        <Text text="LOCATION_DESC"/>
+        </Column>
+        <Column >
+        <Text text="LOCATION_TYPE"/>
+        </Column>
+        <Column >
+        <Text text="RESERVE_FIELD1"/>
+        </Column>
+        <Column >
+        <Text text="RESERVE_FIELD2"/>
+        </Column>
+         <Column >
+        <Text text="RESERVE_FIELD3"/>
+        </Column>
+         <Column >
+        <Text text="RESERVE_FIELD4"/>
+        </Column>
+         <Column >
+        <Text text="RESERVE_FIELD5"/>
+        </Column>
+
+        </columns>
+        <ColumnListItem>
+        <cells>
+        <Text text="{id}"/>
+        <Input value="{desc}"></Input>
+        <Input value="{type}"></Input>
+        <Input value="{rf1}"></Input>
+        <Input value="{rf2}"></Input>
+        <Input value="{rf3}"></Input>
+        <Input value="{rf4}"></Input>
+        <Input value="{rf5}"></Input>
+        </cells>
+        </ColumnListItem>
+        </Table>
+        </content>
+        <beginButton>
+
+        <Button text="Submit" press="onSubmit"></Button>
+
+        </beginButton>
+
+        <endButton>
+
+        <Button text="Close" type="Ghost" press="onCloseEdit"></Button>
+
+        </endButton>
+        
+        
+			</Dialog>
+
+</core:FragmentDefinition>

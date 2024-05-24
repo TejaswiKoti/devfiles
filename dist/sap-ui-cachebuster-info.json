@@ -1,0 +1,17 @@
+{
+  "Component.js.map": 1708435209943,
+  "ext/controller/ListReportExt.controller.js": 1708435149519,
+  "manifest.json": 1708435209747,
+  "Component.js": 1708328298557,
+  "ext/controller/ListReportExt-dbg.controller.js": 1708435149519,
+  "ext/controller/ListReportExt.controller.js.map": 1708435209982,
+  "Component-dbg.js": 1708328298557,
+  "i18n/i18n.properties": 1708328330985,
+  "Component-preload.js": 1708435210222,
+  "Component-preload.js.map": 1708435210222,
+  "fragments/edit.fragment.xml": 1708327956541,
+  "fragments/create.fragment.xml": 1708327956537,
+  "fragments/browse.fragment.xml": 1708327956537,
+  "annotations/annotation.xml": 1708413349189,
+  "index.html": 1708328298557
+}

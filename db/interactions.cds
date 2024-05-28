@@ -26,3 +26,22 @@ entity SBP_Testing{
     key ID : Integer;
         NAME : String;
 }
+
+entity nodes {
+    key node_id : Integer;
+        name    : String(32);
+        field1  : String(32);
+        field2  : String(32);
+        field3  : String(32);
+}
+
+
+entity edges {
+    key edge_id    : Integer;
+        length     : Integer;
+        difficulty : String(16);
+        start      : Association to one nodes  not null;
+        end        : Association to one nodes not null;
+        mode       : String(8);
+        status     : String(16)
+}

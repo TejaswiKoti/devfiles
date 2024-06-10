@@ -22,8 +22,9 @@ entity Interactions_Items {
         LOGTEXT : LText;
 };
 
+
 entity SBP_Testing{
-    key ID : Integer;
+    key ID: Integer;
         NAME : String;
 }
 
@@ -44,4 +45,8 @@ entity edges {
         end        : Association to one nodes not null;
         mode       : String(8);
         status     : String(16)
+}
+
+entity edge{
+    
 }

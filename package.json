@@ -18,7 +18,10 @@
     "sqlite3": "^5.1.7"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "undeploy": "cf undeploy MyHanaCapm --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "cds": {
     "hana": {
@@ -42,6 +45,7 @@
     }
   },
   "devDependencies": {
-    "@sap/cds-dk": "^7"
+    "@sap/cds-dk": "^7",
+    "rimraf": "^5.0.5"
   }
 }
